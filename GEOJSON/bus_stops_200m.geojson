@@ -1,0 +1,1328 @@
+{
+  "type" : "FeatureCollection",
+  "features" : [
+    {
+      "type" : "Feature",
+      "id" : 1,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -128.05981578398644,
+          55.107034687677576
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 1,
+        "stopid" : "197012",
+        "stopname" : "Hwy 37 FS Frog St (NB)",
+        "stopsite" : "NB_Hwy 37_FS_Frog St",
+        "index_righ" : 29,
+        "code" : "HAZ",
+        "system" : "Hazeltons Regional Transit System",
+        "gtfs_url" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 2,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -128.07622989548736,
+          55.096059084242491
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 2,
+        "stopid" : "197010",
+        "stopname" : "Hwy 16 Petro Canade AT Hwy 37 (WB)",
+        "stopsite" : "WB_Hwy 16_Petro Canada_AT_Hwy 37",
+        "index_righ" : 29,
+        "code" : "HAZ",
+        "system" : "Hazeltons Regional Transit System",
+        "gtfs_url" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 3,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -128.07217188945168,
+          55.104241990845949
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 3,
+        "stopid" : "197011",
+        "stopname" : "Hwy 37 FS Kitwanga Rd W (NB)",
+        "stopsite" : "NB_Hwy 37_FS_Kitwanga Rd_W",
+        "index_righ" : 29,
+        "code" : "HAZ",
+        "system" : "Hazeltons Regional Transit System",
+        "gtfs_url" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 4,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -127.3313759651994,
+          55.019240422228513
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 4,
+        "stopid" : "195009",
+        "stopname" : "Moricetown Esso (NB)",
+        "stopsite" : "NB_Moricetown_Esso",
+        "index_righ" : 29,
+        "code" : "HAZ",
+        "system" : "Hazeltons Regional Transit System",
+        "gtfs_url" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 5,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -127.58457576866694,
+          55.246370169058764
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 5,
+        "stopid" : "197003",
+        "stopname" : "McLeod at 10th Ave (SB)",
+        "stopsite" : "SB_McLeod St_FS_10th Ave",
+        "index_righ" : 29,
+        "code" : "HAZ",
+        "system" : "Hazeltons Regional Transit System",
+        "gtfs_url" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 6,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -127.66063661975875,
+          55.238463016319592
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 6,
+        "stopid" : "197005",
+        "stopname" : "Omineca Ave at Aldous St (WB)",
+        "stopsite" : "WB_Omineca Ave_NS_Aldous St",
+        "index_righ" : 29,
+        "code" : "HAZ",
+        "system" : "Hazeltons Regional Transit System",
+        "gtfs_url" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 7,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -127.66028950738587,
+          55.238336151216259
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 7,
+        "stopid" : "197006",
+        "stopname" : "Omineca Ave at Aldous St (EB)",
+        "stopsite" : "EB_Omineca Ave_FS_Aldous St",
+        "index_righ" : 29,
+        "code" : "HAZ",
+        "system" : "Hazeltons Regional Transit System",
+        "gtfs_url" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 8,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -128.05508571152617,
+          55.102108685132521
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 8,
+        "stopid" : "197009",
+        "stopname" : "Gitwangak Heath Centre",
+        "stopsite" : "Gitwangak_Health_Centre",
+        "index_righ" : 29,
+        "code" : "HAZ",
+        "system" : "Hazeltons Regional Transit System",
+        "gtfs_url" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 9,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -122.74758980798015,
+          53.893758631182784
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 9,
+        "stopid" : "105099",
+        "stopname" : "Moyie at Proppe (SB)",
+        "stopsite" : "SB_Moyie_FS_Proppe",
+        "index_righ" : 31,
+        "code" : "PRG",
+        "system" : "Prince George Transit System",
+        "gtfs_url" : "https://www.bctransit.com/data/gtfs/prince-george.zip"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 10,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -122.78033085309201,
+          53.866422824989222
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 10,
+        "stopid" : "105114",
+        "stopname" : "O Grady 5940 block (WB)",
+        "stopsite" : "WB_5940_block_O Grady",
+        "index_righ" : 31,
+        "code" : "PRG",
+        "system" : "Prince George Transit System",
+        "gtfs_url" : "https://www.bctransit.com/data/gtfs/prince-george.zip"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 11,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -122.77058160654445,
+          53.88868860921437
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 11,
+        "stopid" : "105225",
+        "stopname" : "Recplace at Ferry (NB)",
+        "stopsite" : "NB_Recplace_NS_Ferry",
+        "index_righ" : 31,
+        "code" : "PRG",
+        "system" : "Prince George Transit System",
+        "gtfs_url" : "https://www.bctransit.com/data/gtfs/prince-george.zip"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 12,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -122.76557285716609,
+          53.884043826962319
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 12,
+        "stopid" : "105240",
+        "stopname" : "Lansdowne at Sinclair (SB)",
+        "stopsite" : "SB_Lansdowne_NS_Sinclair",
+        "index_righ" : 31,
+        "code" : "PRG",
+        "system" : "Prince George Transit System",
+        "gtfs_url" : "https://www.bctransit.com/data/gtfs/prince-george.zip"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 13,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -122.77736585339214,
+          53.872075825230667
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 13,
+        "stopid" : "105255",
+        "stopname" : "McGill at Eton (SB)",
+        "stopsite" : "SB_McGill_FS_Eton",
+        "index_righ" : 31,
+        "code" : "PRG",
+        "system" : "Prince George Transit System",
+        "gtfs_url" : "https://www.bctransit.com/data/gtfs/prince-george.zip"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 14,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -122.77691185314127,
+          53.868196825040364
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 14,
+        "stopid" : "105257",
+        "stopname" : "O Grady at Domano (SB)",
+        "stopsite" : "SB_O Grady_FS_Domano",
+        "index_righ" : 31,
+        "code" : "PRG",
+        "system" : "Prince George Transit System",
+        "gtfs_url" : "https://www.bctransit.com/data/gtfs/prince-george.zip"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 15,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -122.78889685312036,
+          53.86288482376537
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 15,
+        "stopid" : "105259",
+        "stopname" : "Marleau at Lalonde (WB)",
+        "stopsite" : "WB_Marleau_FS_Lalonde",
+        "index_righ" : 31,
+        "code" : "PRG",
+        "system" : "Prince George Transit System",
+        "gtfs_url" : "https://www.bctransit.com/data/gtfs/prince-george.zip"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 16,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -122.80118585439273,
+          53.860800822296589
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 16,
+        "stopid" : "105260",
+        "stopname" : "Bear at Westgate (EB)",
+        "stopsite" : "EB_Bear_FS_Westgate",
+        "index_righ" : 31,
+        "code" : "PRG",
+        "system" : "Prince George Transit System",
+        "gtfs_url" : "https://www.bctransit.com/data/gtfs/prince-george.zip"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 17,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -122.8147688554286,
+          53.857923819890722
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 17,
+        "stopid" : "105262",
+        "stopname" : "Bear 4270 block (EB)",
+        "stopsite" : "EB_4270_block_Bear",
+        "index_righ" : 31,
+        "code" : "PRG",
+        "system" : "Prince George Transit System",
+        "gtfs_url" : "https://www.bctransit.com/data/gtfs/prince-george.zip"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 18,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -122.80682985435772,
+          53.859191821502208
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 18,
+        "stopid" : "105281",
+        "stopname" : "Bear at Aldeen (WB)",
+        "stopsite" : "WB_Bear_FS_Aldeen",
+        "index_righ" : 31,
+        "code" : "PRG",
+        "system" : "Prince George Transit System",
+        "gtfs_url" : "https://www.bctransit.com/data/gtfs/prince-george.zip"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 19,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -122.80799885378562,
+          53.858998821145931
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 19,
+        "stopid" : "105288",
+        "stopname" : "Bear at Eugene (EB)",
+        "stopsite" : "EB_Bear_FS_Eugene",
+        "index_righ" : 31,
+        "code" : "PRG",
+        "system" : "Prince George Transit System",
+        "gtfs_url" : "https://www.bctransit.com/data/gtfs/prince-george.zip"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 20,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -122.80363485449709,
+          53.859872821456122
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 20,
+        "stopid" : "105289",
+        "stopname" : "Bear 3740 block (EB)",
+        "stopsite" : "EB_3740_block_Bear",
+        "index_righ" : 31,
+        "code" : "PRG",
+        "system" : "Prince George Transit System",
+        "gtfs_url" : "https://www.bctransit.com/data/gtfs/prince-george.zip"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 21,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -122.8027658535056,
+          53.860464821598569
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 21,
+        "stopid" : "105290",
+        "stopname" : "Bear at Westgate (WB)",
+        "stopsite" : "WB_Bear_FS_Westgate",
+        "index_righ" : 31,
+        "code" : "PRG",
+        "system" : "Prince George Transit System",
+        "gtfs_url" : "https://www.bctransit.com/data/gtfs/prince-george.zip"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 22,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -122.80956985488727,
+          53.858305820801505
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 22,
+        "stopid" : "105291",
+        "stopname" : "Troy at Highway 16 (SB)",
+        "stopsite" : "SB_Troy_FS_Highway 16",
+        "index_righ" : 31,
+        "code" : "PRG",
+        "system" : "Prince George Transit System",
+        "gtfs_url" : "https://www.bctransit.com/data/gtfs/prince-george.zip"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 23,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -122.82437585267527,
+          53.846977818355505
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 23,
+        "stopid" : "105388",
+        "stopname" : " Bunce at Great Bear (SB)",
+        "stopsite" : "SB_Bunce_NS_Great Bear",
+        "index_righ" : 31,
+        "code" : "PRG",
+        "system" : "Prince George Transit System",
+        "gtfs_url" : "https://www.bctransit.com/data/gtfs/prince-george.zip"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 24,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -122.82359485325097,
+          53.849801818928135
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 24,
+        "stopid" : "105389",
+        "stopname" : " Bunce at Park (SB)",
+        "stopsite" : "SB_Bunce_FS_Park",
+        "index_righ" : 31,
+        "code" : "PRG",
+        "system" : "Prince George Transit System",
+        "gtfs_url" : "https://www.bctransit.com/data/gtfs/prince-george.zip"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 25,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -122.78170162890042,
+          53.873972681295513
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 25,
+        "stopid" : "105432",
+        "stopname" : "Foster Rd at Davis (SB)",
+        "stopsite" : "SB_Foster Rd_AT_Davis",
+        "index_righ" : 31,
+        "code" : "PRG",
+        "system" : "Prince George Transit System",
+        "gtfs_url" : "https://www.bctransit.com/data/gtfs/prince-george.zip"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 26,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -122.78098485567823,
+          53.874611825206543
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 26,
+        "stopid" : "105438",
+        "stopname" : "Davis at Foster (NB)",
+        "stopsite" : "NB_Davis_FS_Foster",
+        "index_righ" : 31,
+        "code" : "PRG",
+        "system" : "Prince George Transit System",
+        "gtfs_url" : "https://www.bctransit.com/data/gtfs/prince-george.zip"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 27,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -122.81484585476912,
+          53.858094819831152
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 27,
+        "stopid" : "105820",
+        "stopname" : "Bear 4270 block (WB)",
+        "stopsite" : "WB_4270_block_Bear",
+        "index_righ" : 31,
+        "code" : "PRG",
+        "system" : "Prince George Transit System",
+        "gtfs_url" : "https://www.bctransit.com/data/gtfs/prince-george.zip"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 28,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -122.77787685313248,
+          53.868994824932017
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 28,
+        "stopid" : "105007",
+        "stopname" : "Domano at O Grady (WB)",
+        "stopsite" : "WB_Domano_FS_O Grady",
+        "index_righ" : 31,
+        "code" : "PRG",
+        "system" : "Prince George Transit System",
+        "gtfs_url" : "https://www.bctransit.com/data/gtfs/prince-george.zip"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 29,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -122.7861608530683,
+          53.865175823572464
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 29,
+        "stopid" : "105019",
+        "stopname" : "Westgate Exchange Bay A",
+        "stopsite" : "Westgate_Exchange_Bay_A",
+        "index_righ" : 31,
+        "code" : "PRG",
+        "system" : "Prince George Transit System",
+        "gtfs_url" : "https://www.bctransit.com/data/gtfs/prince-george.zip"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 30,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -122.77125585794296,
+          53.884588826982466
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 30,
+        "stopid" : "105044",
+        "stopname" : "Range at Wiebe (WB)",
+        "stopsite" : "WB_Range_NS_Wiebe",
+        "index_righ" : 31,
+        "code" : "PRG",
+        "system" : "Prince George Transit System",
+        "gtfs_url" : "https://www.bctransit.com/data/gtfs/prince-george.zip"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 31,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -122.75490185659025,
+          53.889175829083868
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 31,
+        "stopid" : "105046",
+        "stopname" : "Ferry at Clapperton (WB)",
+        "stopsite" : "WB_Ferry_FS_Clapperton",
+        "index_righ" : 31,
+        "code" : "PRG",
+        "system" : "Prince George Transit System",
+        "gtfs_url" : "https://www.bctransit.com/data/gtfs/prince-george.zip"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 32,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -122.773539857046,
+          53.881753826259356
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 32,
+        "stopid" : "105048",
+        "stopname" : "Wiebe 3880 block (SB)",
+        "stopsite" : "SB_3880_block_Wiebe",
+        "index_righ" : 31,
+        "code" : "PRG",
+        "system" : "Prince George Transit System",
+        "gtfs_url" : "https://www.bctransit.com/data/gtfs/prince-george.zip"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 33,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -122.78618685322509,
+          53.865119823769071
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 33,
+        "stopid" : "800033",
+        "stopname" : "Westgate Exchange",
+        "stopsite" : "Westgate Exchange",
+        "index_righ" : 31,
+        "code" : "PRG",
+        "system" : "Prince George Transit System",
+        "gtfs_url" : "https://www.bctransit.com/data/gtfs/prince-george.zip"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 34,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -122.80678687131626,
+          53.859150604068141
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 34,
+        "stopid" : "105261",
+        "stopname" : "Bear at Aldeen (EB)",
+        "stopsite" : "EB_Bear_NS_Aldeen",
+        "index_righ" : 31,
+        "code" : "PRG",
+        "system" : "Prince George Transit System",
+        "gtfs_url" : "https://www.bctransit.com/data/gtfs/prince-george.zip"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 35,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -122.78602389009062,
+          53.865148945872775
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 35,
+        "stopid" : "180029",
+        "stopname" : "Westgate Exchange Bay B",
+        "stopsite" : "Westgate Exchange_Bay B",
+        "index_righ" : 31,
+        "code" : "PRG",
+        "system" : "Prince George Transit System",
+        "gtfs_url" : "https://www.bctransit.com/data/gtfs/prince-george.zip"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 36,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -122.78037585196314,
+          53.866528824828606
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 36,
+        "stopid" : "105258",
+        "stopname" : "O Grady 5940 block (EB)",
+        "stopsite" : "EB_5940_block_O Grady",
+        "index_righ" : 31,
+        "code" : "PRG",
+        "system" : "Prince George Transit System",
+        "gtfs_url" : "https://www.bctransit.com/data/gtfs/prince-george.zip"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 37,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -122.75715085658233,
+          53.888691828936821
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 37,
+        "stopid" : "105279",
+        "stopname" : "Ferry at Spruce (EB)",
+        "stopsite" : "EB_Ferry_FS_Spruce",
+        "index_righ" : 31,
+        "code" : "PRG",
+        "system" : "Prince George Transit System",
+        "gtfs_url" : "https://www.bctransit.com/data/gtfs/prince-george.zip"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 38,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -130.30919796197387,
+          54.310775952598988
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 38,
+        "stopid" : "190069",
+        "stopname" : "11th Ave E at Prince Rupert Blvd (WB)",
+        "stopsite" : "WB_11th Ave E_FS_Prince Rupert Blvd",
+        "index_righ" : 27,
+        "code" : "PRR",
+        "system" : "Prince Rupert Transit System",
+        "gtfs_url" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 39,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -130.32224303167075,
+          54.315934477211613
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 39,
+        "stopid" : "190101",
+        "stopname" : "McBride at 1st (WB)",
+        "stopsite" : "WB_McBride_NS_1st St",
+        "index_righ" : 27,
+        "code" : "PRR",
+        "system" : "Prince Rupert Transit System",
+        "gtfs_url" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 40,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -130.31238662437784,
+          54.309956474994287
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 40,
+        "stopid" : "190049",
+        "stopname" : "Civic Centre Complex (EB)",
+        "stopsite" : "EB_Civic Centre Complex",
+        "index_righ" : 27,
+        "code" : "PRR",
+        "system" : "Prince Rupert Transit System",
+        "gtfs_url" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 41,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -130.31313341148385,
+          54.310907343397687
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 41,
+        "stopid" : "190050",
+        "stopname" : "McBride at 9th Ave E (WB)",
+        "stopsite" : "WB_McBride_NS_9th Ave E",
+        "index_righ" : 27,
+        "code" : "PRR",
+        "system" : "Prince Rupert Transit System",
+        "gtfs_url" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 42,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -130.30670274432225,
+          54.310606526094475
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 42,
+        "stopid" : "190051",
+        "stopname" : "Pr. Rupert Blvd at Gull Cres (EB)",
+        "stopsite" : "EB_Pr Rupert Blvd_NS_Gull Cres",
+        "index_righ" : 27,
+        "code" : "PRR",
+        "system" : "Prince Rupert Transit System",
+        "gtfs_url" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 43,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -130.30042025094829,
+          54.312169372972505
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 43,
+        "stopid" : "190052",
+        "stopname" : "Pr Rupert Blvd at Pr George St (EB)",
+        "stopsite" : "EB_Pr Rupert Blvd_FS_Pr George St",
+        "index_righ" : 27,
+        "code" : "PRR",
+        "system" : "Prince Rupert Transit System",
+        "gtfs_url" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 44,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -130.26695559286057,
+          54.307045823067746
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 44,
+        "stopid" : "190102",
+        "stopname" : "Butze Rapids Lookout Point (NB)",
+        "stopsite" : "NB_Butze Rapids Lookout Point",
+        "index_righ" : 27,
+        "code" : "PRR",
+        "system" : "Prince Rupert Transit System",
+        "gtfs_url" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 45,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -130.29163509693095,
+          54.227774771101267
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 45,
+        "stopid" : "191000",
+        "stopname" : "Evergreen at Skeena (SB)",
+        "stopsite" : "SB_Evergreen_AT_Skeena",
+        "index_righ" : 27,
+        "code" : "PRR",
+        "system" : "Prince Rupert Transit System",
+        "gtfs_url" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 46,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -130.29023635216404,
+          54.226104779445777
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 46,
+        "stopid" : "191001",
+        "stopname" : "Evergreen at 470 Blk (SB)",
+        "stopsite" : "SB_Evergreen_AT_470 Blk",
+        "index_righ" : 27,
+        "code" : "PRR",
+        "system" : "Prince Rupert Transit System",
+        "gtfs_url" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 47,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -130.28874277501939,
+          54.220449864460306
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 47,
+        "stopid" : "191003",
+        "stopname" : "Alder at Pacific (WB)",
+        "stopsite" : "WB_Alder_FS_Pacific",
+        "index_righ" : 27,
+        "code" : "PRR",
+        "system" : "Prince Rupert Transit System",
+        "gtfs_url" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 48,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -130.28835160045375,
+          54.217913216315061
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 48,
+        "stopid" : "191004",
+        "stopname" : "Oceanview at Hillcrest (SB)",
+        "stopsite" : "SB_Oceanview_NS_Hillcrest",
+        "index_righ" : 27,
+        "code" : "PRR",
+        "system" : "Prince Rupert Transit System",
+        "gtfs_url" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 49,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -130.29087645311085,
+          54.21971522204219
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 49,
+        "stopid" : "191005",
+        "stopname" : "Skeena at Alder (NB)",
+        "stopsite" : "NB_Skeena_FS_Alder",
+        "index_righ" : 27,
+        "code" : "PRR",
+        "system" : "Prince Rupert Transit System",
+        "gtfs_url" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 50,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -130.29229890606294,
+          54.223506108738242
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 50,
+        "stopid" : "191006",
+        "stopname" : "Skeena at Harbourview (NB)",
+        "stopsite" : "NB_Skeena_NS_Harbourview",
+        "index_righ" : 27,
+        "code" : "PRR",
+        "system" : "Prince Rupert Transit System",
+        "gtfs_url" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 51,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -130.29158768133397,
+          54.225668214079938
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 51,
+        "stopid" : "191007",
+        "stopname" : "Skeena at Sunset (NB)",
+        "stopsite" : "NB_Skeena_FS_Sunset",
+        "index_righ" : 27,
+        "code" : "PRR",
+        "system" : "Prince Rupert Transit System",
+        "gtfs_url" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 52,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -130.22443609925583,
+          54.19497929803326
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 52,
+        "stopid" : "191008",
+        "stopname" : "North Pacific Cannery (EB)",
+        "stopsite" : "EB_North Pacific Cannery",
+        "index_righ" : 27,
+        "code" : "PRR",
+        "system" : "Prince Rupert Transit System",
+        "gtfs_url" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 53,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -127.05077183423828,
+          54.699521176419132
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 53,
+        "stopid" : "185038",
+        "stopname" : "Hwy 16 at Telkwa Post Office (NB)",
+        "stopsite" : "NB_Hwy 16_AT_Telkwa_Post_Office",
+        "index_righ" : 30,
+        "code" : "SMI",
+        "system" : "Smithers Regional Transit System",
+        "gtfs_url" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 54,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -127.05408341429907,
+          54.703848184979528
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 54,
+        "stopid" : "185044",
+        "stopname" : "Highway 16 at Telkwa High Rd (EB)",
+        "stopsite" : "EB_Hwy 16_AT_Telkwa High Rd",
+        "index_righ" : 30,
+        "code" : "SMI",
+        "system" : "Smithers Regional Transit System",
+        "gtfs_url" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 55,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -128.59613617336581,
+          54.517010426598596
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 55,
+        "stopid" : "192001",
+        "stopname" : "Lakelse at Skeena Mall Entr (EB)",
+        "stopsite" : "EB_Lakelse_AT_Skeena Mall Entrance",
+        "index_righ" : 28,
+        "code" : "TER",
+        "system" : "Terrace Regional Transit System",
+        "gtfs_url" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 56,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -128.6675580949761,
+          54.523639934075113
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 56,
+        "stopid" : "192006",
+        "stopname" : "West Kalum Rd at Hwy 16 (NB)",
+        "stopsite" : "NB_West Kalum Rd_FS_Hwy 16",
+        "index_righ" : 28,
+        "code" : "TER",
+        "system" : "Terrace Regional Transit System",
+        "gtfs_url" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 57,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -128.58475994612178,
+          54.516241721673495
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 57,
+        "stopid" : "192051",
+        "stopname" : "Lakelse at Atwood (EB)",
+        "stopsite" : "EB_Lakelse_NS_Atwood",
+        "index_righ" : 28,
+        "code" : "TER",
+        "system" : "Terrace Regional Transit System",
+        "gtfs_url" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 58,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -128.58080078949666,
+          54.516035298336519
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 58,
+        "stopid" : "192052",
+        "stopname" : "Lakelse at Clinton (EB)",
+        "stopsite" : "EB_Lakelse_FS_Clinton",
+        "index_righ" : 28,
+        "code" : "TER",
+        "system" : "Terrace Regional Transit System",
+        "gtfs_url" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 59,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -128.578406328428,
+          54.516991720509971
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 59,
+        "stopid" : "192053",
+        "stopname" : "Apsley at Park Ave (NB)",
+        "stopsite" : "NB_Apsley_NS_Park Ave",
+        "index_righ" : 28,
+        "code" : "TER",
+        "system" : "Terrace Regional Transit System",
+        "gtfs_url" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 60,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -128.57269281486893,
+          54.51756281134044
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 60,
+        "stopid" : "192054",
+        "stopname" : "Johnstone at Birch (NB)",
+        "stopsite" : "NB_Johnstone_FS_Birch",
+        "index_righ" : 28,
+        "code" : "TER",
+        "system" : "Terrace Regional Transit System",
+        "gtfs_url" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 61,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -128.61007958537689,
+          54.517776103580495
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 61,
+        "stopid" : "192073",
+        "stopname" : "Lazelle at Kenney (EB)",
+        "stopsite" : "EB_Lazelle_FS_Kenney",
+        "index_righ" : 28,
+        "code" : "TER",
+        "system" : "Terrace Regional Transit System",
+        "gtfs_url" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 62,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -128.60635750370844,
+          54.51772105924293
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 62,
+        "stopid" : "192074",
+        "stopname" : "Lazelle at Munroe (EB)",
+        "stopsite" : "EB_Lazelle_NS_Munroe",
+        "index_righ" : 28,
+        "code" : "TER",
+        "system" : "Terrace Regional Transit System",
+        "gtfs_url" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 63,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -128.59116097817716,
+          54.51670273038232
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 63,
+        "stopid" : "192010",
+        "stopname" : "Lakelse at 4655 Safeway Entr (EB)",
+        "stopsite" : "EB_Lakelse_AT_4655 Blk",
+        "index_righ" : 28,
+        "code" : "TER",
+        "system" : "Terrace Regional Transit System",
+        "gtfs_url" : " "
+      }
+    }
+  ]
+}
