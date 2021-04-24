@@ -12,3 +12,5 @@ Commented code associated with the visualizations (e.g., JavaScript and HTML).
 Any Mapbox Studio JSON style files for your maps, if relevant.
 
 [Full Map](Final/HTML Maps/Final-pt1.html)
+[Full Map](Final/HTML Maps/Final-pt2.html)
+
