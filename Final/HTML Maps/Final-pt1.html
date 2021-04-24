@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Highway-16 Feature Distribution Part-1 </title>
+
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css" rel="stylesheet"/>
+
+</head>
+<body>
+<style>
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+#menu {
+background: #fff;
+position: absolute;
+z-index: 1;
+top: 10px;
+right: 10px;
+border-radius: 3px;
+width: 120px;
+border: 1px solid rgba(0, 0, 0, 0.4);
+font-family: 'Open Sans', sans-serif;
+}
+ 
+#menu a {
+font-size: 13px;
+color: #404040;
+display: block;
+margin: 0;
+padding: 0;
+padding: 10px;
+text-decoration: none;
+border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+text-align: center;
+}
+ 
+#menu a:last-child {
+border: none;
+}
+ 
+#menu a:hover {
+background-color: #f8f8f8;
+color: #404040;
+}
+ 
+#menu a.active {
+background-color: #3887be;
+color: #ffffff;}
+ 
+#menu a.active:hover {
+background: #3074a4;
+}
+</style>
+ 
+<nav id="menu"></nav>
+<div id="map"></div>
+  
+ 
+<script>
+	mapboxgl.accessToken = 'pk.eyJ1IjoiZmVsLXkiLCJhIjoiY2tsY3I1ZTdvMG90azJvbWRoZDY5M3ZscCJ9.MhRD9-LaX3YYhPBwtmaWxQ';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/fel-y/ckns92vbo03u417o22w4ftl84',
+zoom: 6,
+center: [ -125.30775897454278, 54.10168026052844]
+    });
+  
+        // First Responder
+      var FirstRes = {
+        "type":"FeatureCollection",
+        "features":[
+          {"type":"Feature","id":1,"geometry":{"type":"Point","coordinates":[-120.16308346832739,53.30350026182765]},"properties":{"Name":"Mcbride Fire Dept","info":"FIRE"}},{"type":"Feature","id":2,"geometry":{"type":"Point","coordinates":[-122.50991016352322,53.942234282386266]},"properties":{"Name":"Ferndale Tabor Vol Fire Dept","info":"FIRE"}},{"type":"Feature","id":3,"geometry":{"type":"Point","coordinates":[-120.15698464752342,53.30359899569714]},"properties":{"Name":"Mcbride RCMP","info":"POLICE"}},{"type":"Feature","id":4,"geometry":{"type":"Point","coordinates":[-125.75612106323644,54.22432114280656]},"properties":{"Name":"Burns Lake RCMP","info":"POLICE"}},{"type":"Feature","id":5,"geometry":{"type":"Point","coordinates":[-128.59992424300935,54.516103969222854]},"properties":{"Name":"Stn 645 Terrace Ambulance","info":"AMBULANCE"}},{"type":"Feature","id":6,"geometry":{"type":"Point","coordinates":[-128.06884254904435,55.103433239852166]},"properties":{"Name":"Gitwangak Fire Hall","info":"FIRE"}},{"type":"Feature","id":7,"geometry":{"type":"Point","coordinates":[-124.01402336458659,54.0133341932185]},"properties":{"Name":"Vanderhoof Fire Dept","info":"FIRE"}},{"type":"Feature","id":8,"geometry":{"type":"Point","coordinates":[-124.84162722131919,54.055932107181036]},"properties":{"Name":"Fraser Lake RCMP","info":"POLICE"}},{"type":"Feature","id":9,"geometry":{"type":"Point","coordinates":[-128.59965329975995,54.516745080621035]},"properties":{"Name":"Terrace RCMP","info":"POLICE"}},{"type":"Feature","id":10,"geometry":{"type":"Point","coordinates":[-128.59962189903138,54.51712263040514]},"properties":{"Name":"Terrace Fire Dept","info":"FIRE"}},{"type":"Feature","id":11,"geometry":{"type":"Point","coordinates":[-127.3308878955599,55.019307351553095]},"properties":{"Name":"Moricetown Fire Dept","info":"FIRE"}},{"type":"Feature","id":12,"geometry":{"type":"Point","coordinates":[-127.05806651905459,54.70765662785112]},"properties":{"Name":"Telkwa Vol Fire Dept","info":"FIRE"}},{"type":"Feature","id":13,"geometry":{"type":"Point","coordinates":[-124.85421556799406,54.05651482649807]},"properties":{"Name":"Fraser Lake Fire Dept","info":"FIRE"}},{"type":"Feature","id":14,"geometry":{"type":"Point","coordinates":[-130.2917277285518,54.224790516069504]},"properties":{"Name":"Port Edward Vol Fire Dept","info":"FIRE"}},{"type":"Feature","id":15,"geometry":{"type":"Point","coordinates":[-122.9301617233848,53.81196560712715]},"properties":{"Name":"Beaverly Vol Fire Dept","info":"FIRE"}},{"type":"Feature","id":16,"geometry":{"type":"Point","coordinates":[-124.00784407874119,54.01663185247804]},"properties":{"Name":"Stn 771 Vanderhoof Ambulance","info":"AMBULANCE"}},{"type":"Feature","id":17,"geometry":{"type":"Point","coordinates":[-124.01102449878158,54.017164227746946]},"properties":{"Name":"Vanderhoof RCMP","info":"POLICE"}},{"type":"Feature","id":18,"geometry":{"type":"Point","coordinates":[-126.64830778027982,54.398616957106924]},"properties":{"Name":"Houston RCMP","info":"POLICE"}},{"type":"Feature","id":19,"geometry":{"type":"Point","coordinates":[-122.80392714152435,53.86082945661417]},"properties":{"Name":"Prince George Fire Hall 3 Vanway","info":"FIRE"}}]
+      }; 
+      //Bus Stop
+      var BusStop = {
+        "type":"FeatureCollection",
+        "features":[
+          {"type":"Feature","id":1,"geometry":{"type":"Point","coordinates":[-128.05981578398644,55.107034687677576]},"properties":{"Name":"Hwy 37 FS Frog St (NB)","info":"Hazeltons Regional Transit System"}},{"type":"Feature","id":2,"geometry":{"type":"Point","coordinates":[-128.07622989548736,55.09605908424249]},"properties":{"Name":"Hwy 16 Petro Canade AT Hwy 37 (WB)","info":"Hazeltons Regional Transit System"}},{"type":"Feature","id":3,"geometry":{"type":"Point","coordinates":[-128.07217188945168,55.10424199084595]},"properties":{"Name":"Hwy 37 FS Kitwanga Rd W (NB)","info":"Hazeltons Regional Transit System"}},{"type":"Feature","id":4,"geometry":{"type":"Point","coordinates":[-127.3313759651994,55.01924042222851]},"properties":{"Name":"Moricetown Esso (NB)","info":"Hazeltons Regional Transit System"}},{"type":"Feature","id":5,"geometry":{"type":"Point","coordinates":[-127.58457576866694,55.246370169058764]},"properties":{"Name":"McLeod at 10th Ave (SB)","info":"Hazeltons Regional Transit System"}},{"type":"Feature","id":6,"geometry":{"type":"Point","coordinates":[-127.66063661975875,55.23846301631959]},"properties":{"Name":"Omineca Ave at Aldous St (WB)","info":"Hazeltons Regional Transit System"}},{"type":"Feature","id":7,"geometry":{"type":"Point","coordinates":[-127.66028950738587,55.23833615121626]},"properties":{"Name":"Omineca Ave at Aldous St (EB)","info":"Hazeltons Regional Transit System"}},{"type":"Feature","id":8,"geometry":{"type":"Point","coordinates":[-128.05508571152617,55.10210868513252]},"properties":{"Name":"Gitwangak Heath Centre","info":"Hazeltons Regional Transit System"}},{"type":"Feature","id":9,"geometry":{"type":"Point","coordinates":[-122.74758980798015,53.893758631182784]},"properties":{"Name":"Moyie at Proppe (SB)","info":"Prince George Transit System"}},{"type":"Feature","id":10,"geometry":{"type":"Point","coordinates":[-122.78033085309201,53.86642282498922]},"properties":{"Name":"O Grady 5940 block (WB)","info":"Prince George Transit System"}},{"type":"Feature","id":11,"geometry":{"type":"Point","coordinates":[-122.77058160654445,53.88868860921437]},"properties":{"Name":"Recplace at Ferry (NB)","info":"Prince George Transit System"}},{"type":"Feature","id":12,"geometry":{"type":"Point","coordinates":[-122.76557285716609,53.88404382696232]},"properties":{"Name":"Lansdowne at Sinclair (SB)","info":"Prince George Transit System"}},{"type":"Feature","id":13,"geometry":{"type":"Point","coordinates":[-122.77736585339214,53.87207582523067]},"properties":{"Name":"McGill at Eton (SB)","info":"Prince George Transit System"}},{"type":"Feature","id":14,"geometry":{"type":"Point","coordinates":[-122.77691185314127,53.868196825040364]},"properties":{"Name":"O Grady at Domano (SB)","info":"Prince George Transit System"}},{"type":"Feature","id":15,"geometry":{"type":"Point","coordinates":[-122.78889685312036,53.86288482376537]},"properties":{"Name":"Marleau at Lalonde (WB)","info":"Prince George Transit System"}},{"type":"Feature","id":16,"geometry":{"type":"Point","coordinates":[-122.80118585439273,53.86080082229659]},"properties":{"Name":"Bear at Westgate (EB)","info":"Prince George Transit System"}},{"type":"Feature","id":17,"geometry":{"type":"Point","coordinates":[-122.8147688554286,53.85792381989072]},"properties":{"Name":"Bear 4270 block (EB)","info":"Prince George Transit System"}},{"type":"Feature","id":18,"geometry":{"type":"Point","coordinates":[-122.80682985435772,53.85919182150221]},"properties":{"Name":"Bear at Aldeen (WB)","info":"Prince George Transit System"}},{"type":"Feature","id":19,"geometry":{"type":"Point","coordinates":[-122.80799885378562,53.85899882114593]},"properties":{"Name":"Bear at Eugene (EB)","info":"Prince George Transit System"}},{"type":"Feature","id":20,"geometry":{"type":"Point","coordinates":[-122.80363485449709,53.85987282145612]},"properties":{"Name":"Bear 3740 block (EB)","info":"Prince George Transit System"}},{"type":"Feature","id":21,"geometry":{"type":"Point","coordinates":[-122.8027658535056,53.86046482159857]},"properties":{"Name":"Bear at Westgate (WB)","info":"Prince George Transit System"}},{"type":"Feature","id":22,"geometry":{"type":"Point","coordinates":[-122.80956985488727,53.858305820801505]},"properties":{"Name":"Troy at Highway 16 (SB)","info":"Prince George Transit System"}},{"type":"Feature","id":23,"geometry":{"type":"Point","coordinates":[-122.82437585267527,53.846977818355505]},"properties":{"Name":" Bunce at Great Bear (SB)","info":"Prince George Transit System"}},{"type":"Feature","id":24,"geometry":{"type":"Point","coordinates":[-122.82359485325097,53.849801818928135]},"properties":{"Name":" Bunce at Park (SB)","info":"Prince George Transit System"}},{"type":"Feature","id":25,"geometry":{"type":"Point","coordinates":[-122.78170162890042,53.87397268129551]},"properties":{"Name":"Foster Rd at Davis (SB)","info":"Prince George Transit System"}},{"type":"Feature","id":26,"geometry":{"type":"Point","coordinates":[-122.78098485567823,53.87461182520654]},"properties":{"Name":"Davis at Foster (NB)","info":"Prince George Transit System"}},{"type":"Feature","id":27,"geometry":{"type":"Point","coordinates":[-122.81484585476912,53.85809481983115]},"properties":{"Name":"Bear 4270 block (WB)","info":"Prince George Transit System"}},{"type":"Feature","id":28,"geometry":{"type":"Point","coordinates":[-122.77787685313248,53.86899482493202]},"properties":{"Name":"Domano at O Grady (WB)","info":"Prince George Transit System"}},{"type":"Feature","id":29,"geometry":{"type":"Point","coordinates":[-122.7861608530683,53.865175823572464]},"properties":{"Name":"Westgate Exchange Bay A","info":"Prince George Transit System"}},{"type":"Feature","id":30,"geometry":{"type":"Point","coordinates":[-122.77125585794296,53.884588826982466]},"properties":{"Name":"Range at Wiebe (WB)","info":"Prince George Transit System"}},{"type":"Feature","id":31,"geometry":{"type":"Point","coordinates":[-122.75490185659025,53.88917582908387]},"properties":{"Name":"Ferry at Clapperton (WB)","info":"Prince George Transit System"}},{"type":"Feature","id":32,"geometry":{"type":"Point","coordinates":[-122.773539857046,53.881753826259356]},"properties":{"Name":"Wiebe 3880 block (SB)","info":"Prince George Transit System"}},{"type":"Feature","id":33,"geometry":{"type":"Point","coordinates":[-122.78618685322509,53.86511982376907]},"properties":{"Name":"Westgate Exchange","info":"Prince George Transit System"}},{"type":"Feature","id":34,"geometry":{"type":"Point","coordinates":[-122.80678687131626,53.85915060406814]},"properties":{"Name":"Bear at Aldeen (EB)","info":"Prince George Transit System"}},{"type":"Feature","id":35,"geometry":{"type":"Point","coordinates":[-122.78602389009062,53.865148945872775]},"properties":{"Name":"Westgate Exchange Bay B","info":"Prince George Transit System"}},{"type":"Feature","id":36,"geometry":{"type":"Point","coordinates":[-122.78037585196314,53.866528824828606]},"properties":{"Name":"O Grady 5940 block (EB)","info":"Prince George Transit System"}},{"type":"Feature","id":37,"geometry":{"type":"Point","coordinates":[-122.75715085658233,53.88869182893682]},"properties":{"Name":"Ferry at Spruce (EB)","info":"Prince George Transit System"}},{"type":"Feature","id":38,"geometry":{"type":"Point","coordinates":[-130.30919796197387,54.31077595259899]},"properties":{"Name":"11th Ave E at Prince Rupert Blvd (WB)","info":"Prince Rupert Transit System"}},{"type":"Feature","id":39,"geometry":{"type":"Point","coordinates":[-130.32224303167075,54.31593447721161]},"properties":{"Name":"McBride at 1st (WB)","info":"Prince Rupert Transit System"}},{"type":"Feature","id":40,"geometry":{"type":"Point","coordinates":[-130.31238662437784,54.30995647499429]},"properties":{"Name":"Civic Centre Complex (EB)","info":"Prince Rupert Transit System"}},{"type":"Feature","id":41,"geometry":{"type":"Point","coordinates":[-130.31313341148385,54.31090734339769]},"properties":{"Name":"McBride at 9th Ave E (WB)","info":"Prince Rupert Transit System"}},{"type":"Feature","id":42,"geometry":{"type":"Point","coordinates":[-130.30670274432225,54.310606526094475]},"properties":{"Name":"Pr. Rupert Blvd at Gull Cres (EB)","info":"Prince Rupert Transit System"}},{"type":"Feature","id":43,"geometry":{"type":"Point","coordinates":[-130.3004202509483,54.312169372972505]},"properties":{"Name":"Pr Rupert Blvd at Pr George St (EB)","info":"Prince Rupert Transit System"}},{"type":"Feature","id":44,"geometry":{"type":"Point","coordinates":[-130.26695559286057,54.307045823067746]},"properties":{"Name":"Butze Rapids Lookout Point (NB)","info":"Prince Rupert Transit System"}},{"type":"Feature","id":45,"geometry":{"type":"Point","coordinates":[-130.29163509693095,54.22777477110127]},"properties":{"Name":"Evergreen at Skeena (SB)","info":"Prince Rupert Transit System"}},{"type":"Feature","id":46,"geometry":{"type":"Point","coordinates":[-130.29023635216404,54.22610477944578]},"properties":{"Name":"Evergreen at 470 Blk (SB)","info":"Prince Rupert Transit System"}},{"type":"Feature","id":47,"geometry":{"type":"Point","coordinates":[-130.2887427750194,54.220449864460306]},"properties":{"Name":"Alder at Pacific (WB)","info":"Prince Rupert Transit System"}},{"type":"Feature","id":48,"geometry":{"type":"Point","coordinates":[-130.28835160045375,54.21791321631506]},"properties":{"Name":"Oceanview at Hillcrest (SB)","info":"Prince Rupert Transit System"}},{"type":"Feature","id":49,"geometry":{"type":"Point","coordinates":[-130.29087645311085,54.21971522204219]},"properties":{"Name":"Skeena at Alder (NB)","info":"Prince Rupert Transit System"}},{"type":"Feature","id":50,"geometry":{"type":"Point","coordinates":[-130.29229890606294,54.22350610873824]},"properties":{"Name":"Skeena at Harbourview (NB)","info":"Prince Rupert Transit System"}},{"type":"Feature","id":51,"geometry":{"type":"Point","coordinates":[-130.29158768133397,54.22566821407994]},"properties":{"Name":"Skeena at Sunset (NB)","info":"Prince Rupert Transit System"}},{"type":"Feature","id":52,"geometry":{"type":"Point","coordinates":[-130.22443609925583,54.19497929803326]},"properties":{"Name":"North Pacific Cannery (EB)","info":"Prince Rupert Transit System"}},{"type":"Feature","id":53,"geometry":{"type":"Point","coordinates":[-127.05077183423828,54.69952117641913]},"properties":{"Name":"Hwy 16 at Telkwa Post Office (NB)","info":"Smithers Regional Transit System"}},{"type":"Feature","id":54,"geometry":{"type":"Point","coordinates":[-127.05408341429907,54.70384818497953]},"properties":{"Name":"Highway 16 at Telkwa High Rd (EB)","info":"Smithers Regional Transit System"}},{"type":"Feature","id":55,"geometry":{"type":"Point","coordinates":[-128.5961361733658,54.517010426598596]},"properties":{"Name":"Lakelse at Skeena Mall Entr (EB)","info":"Terrace Regional Transit System"}},{"type":"Feature","id":56,"geometry":{"type":"Point","coordinates":[-128.6675580949761,54.52363993407511]},"properties":{"Name":"West Kalum Rd at Hwy 16 (NB)","info":"Terrace Regional Transit System"}},{"type":"Feature","id":57,"geometry":{"type":"Point","coordinates":[-128.58475994612178,54.516241721673495]},"properties":{"Name":"Lakelse at Atwood (EB)","info":"Terrace Regional Transit System"}},{"type":"Feature","id":58,"geometry":{"type":"Point","coordinates":[-128.58080078949666,54.51603529833652]},"properties":{"Name":"Lakelse at Clinton (EB)","info":"Terrace Regional Transit System"}},{"type":"Feature","id":59,"geometry":{"type":"Point","coordinates":[-128.578406328428,54.51699172050997]},"properties":{"Name":"Apsley at Park Ave (NB)","info":"Terrace Regional Transit System"}},{"type":"Feature","id":60,"geometry":{"type":"Point","coordinates":[-128.57269281486893,54.51756281134044]},"properties":{"Name":"Johnstone at Birch (NB)","info":"Terrace Regional Transit System"}},{"type":"Feature","id":61,"geometry":{"type":"Point","coordinates":[-128.6100795853769,54.517776103580495]},"properties":{"Name":"Lazelle at Kenney (EB)","info":"Terrace Regional Transit System"}},{"type":"Feature","id":62,"geometry":{"type":"Point","coordinates":[-128.60635750370844,54.51772105924293]},"properties":{"Name":"Lazelle at Munroe (EB)","info":"Terrace Regional Transit System"}},{"type":"Feature","id":63,"geometry":{"type":"Point","coordinates":[-128.59116097817716,54.51670273038232]},"properties":{"Name":"Lakelse at 4655 Safeway Entr (EB)","info":"Terrace Regional Transit System"}}
+        ]
+      };
+      // Highway Cam
+      var HighCam ={
+        "type":"FeatureCollection",
+        "features":[
+          {"type":"Feature","id":43,"geometry":{"type":"Point","coordinates":[-126.74668729999996,54.47234230000004]},"properties":{"caption":"Hwy 16 at Anderson Road, 14 km NW of Houston, looking south-east.","Name":"Hungry Hill - S","info":"SE"}},{"type":"Feature","id":63,"geometry":{"type":"Point","coordinates":[-123.40412799999996,53.87730400000004]},"properties":{"caption":"Hwy 16 at Bednesti between Prince George and Vanderhoof, looking west.","Name":"Bednesti - W","info":"W"}},{"type":"Feature","id":64,"geometry":{"type":"Point","coordinates":[-122.7785055,53.87411950000006]},"properties":{"caption":"Hwy 16 at Davis Rd in Prince George, looking eastbound.","Name":"Peden Hill at Davis Rd","info":"E"}},{"type":"Feature","id":65,"geometry":{"type":"Point","coordinates":[-122.77050249999996,53.88080540000004]},"properties":{"caption":"Hwy 16 at Vance Rd in Prince George, looking westbound.","Name":"Peden Hill at Vance Rd","info":"W"}},{"type":"Feature","id":80,"geometry":{"type":"Point","coordinates":[-125.16917309999997,54.09417560000003]},"properties":{"caption":"Hwy 16, 48 km east of Burns Lake, looking west.","Name":"Savory Rest Area - W","info":"SW"}},{"type":"Feature","id":92,"geometry":{"type":"Point","coordinates":[-130.25781339999997,54.25232160000007]},"properties":{"caption":"Hwy 16 at Port Edward arterial road, looking west.","Name":"Port Edward - W","info":"W"}},{"type":"Feature","id":98,"geometry":{"type":"Point","coordinates":[-128.07702569999998,55.095972000000074]},"properties":{"caption":"Junction of Hwy 16 and Hwy 37, near Kitwanga, looking west on Hwy 16.","Name":"Kitwanga - W","info":"W"}},{"type":"Feature","id":100,"geometry":{"type":"Point","coordinates":[-129.35148899999996,54.31325000000004]},"properties":{"caption":"Hwy 16, at Kasiks resort area, 60 km west of Terrace, looking east.","Name":"Kasiks","info":"E"}},{"type":"Feature","id":153,"geometry":{"type":"Point","coordinates":[-120.70769199999995,53.53770600000007]},"properties":{"caption":"Hwy 16, about 50 km west of McBride at Loos Rd, looking west.","Name":"Crescent Spur","info":"W"}},{"type":"Feature","id":154,"geometry":{"type":"Point","coordinates":[-122.00444399999998,53.899722000000054]},"properties":{"caption":"Hwy 16, about 54 km east of Prince George near Purden Lake, looking west.","Name":"Bowron River","info":"W"}},{"type":"Feature","id":167,"geometry":{"type":"Point","coordinates":[-125.46094299999999,54.17302700000005]},"properties":{"caption":"Hwy 16 at Augier Rd, about 22 km east of Burns Lake, looking west.","Name":"Hwy 16 at Augier Rd","info":"W"}},{"type":"Feature","id":212,"geometry":{"type":"Point","coordinates":[-128.38555999999994,54.65722100000005]},"properties":{"caption":"Hwy 16 near Chimdemash Creek, about 22 km east of Hwy 16 and Hwy 37 Junction in Terrace looking north east.","Name":"Chimdemash","info":"E"}},{"type":"Feature","id":259,"geometry":{"type":"Point","coordinates":[-127.32559199999997,54.94120500000008]},"properties":{"caption":"Hwy 16 at the Trout Creek bridge, looking south-east.","Name":"Trout Creek","info":"SE"}},{"type":"Feature","id":262,"geometry":{"type":"Point","coordinates":[-119.82450799999998,53.151756000000034]},"properties":{"caption":"Hwy 16 at Dunster Station Rd, about 30 km east of McBride, looking east.","Name":"Dunster Station Rd","info":"E"}},{"type":"Feature","id":290,"geometry":{"type":"Point","coordinates":[-126.19616499999995,54.453838000000076]},"properties":{"caption":"On Hwy 16, 39 km west of Burns Lake looking west.","Name":"Six Mile Hill","info":"W"}},{"type":"Feature","id":301,"geometry":{"type":"Point","coordinates":[-127.58424599999995,55.24665100000004]},"properties":{"caption":"Hwy 16 at McLeod St in New Hazelton, looking east.","Name":"New Hazelton","info":"E"}},{"type":"Feature","id":383,"geometry":{"type":"Point","coordinates":[-119.42209699999995,52.97581700000006]},"properties":{"caption":"Hwy 16 at Hwy 5 junction, looking east.","Name":"Tete Jaune Cache","info":"E"}},{"type":"Feature","id":394,"geometry":{"type":"Point","coordinates":[-125.35466399999996,54.13176400000003]},"properties":{"caption":"Hwy 16, about 32 km east of Burns Lake, looking east.","Name":"Priestly Hill","info":"E"}},{"type":"Feature","id":398,"geometry":{"type":"Point","coordinates":[-126.74668729999996,54.47234230000004]},"properties":{"caption":"Hwy 16 at Anderson Road, 14 km NW of Houston, looking north-west.","Name":"Hungry Hill - N","info":"NW"}},{"type":"Feature","id":458,"geometry":{"type":"Point","coordinates":[-129.97907199999997,54.20696200000003]},"properties":{"caption":"Hwy 16, east of Prince Rupert near McNeil River at the Rainbow Summit chain-up area, looking west.","Name":"Rainbow Summit Chain-Up Area","info":"W"}},{"type":"Feature","id":493,"geometry":{"type":"Point","coordinates":[-130.257814,54.25232200000005]},"properties":{"caption":"Hwy 16 at Port Edward arterial road, looking east.","Name":"Port Edward - E","info":"E"}},{"type":"Feature","id":494,"geometry":{"type":"Point","coordinates":[-130.257814,54.25232200000005]},"properties":{"caption":"Hwy 16 at Port Edward arterial road, looking south.","Name":"Port Edward - S","info":"S"}},{"type":"Feature","id":656,"geometry":{"type":"Point","coordinates":[-124.60425999999995,54.06132500000007]},"properties":{"caption":"Hwy 16, at Nautley Road, looking west.","Name":"Nautley Rd - W","info":"W"}},{"type":"Feature","id":657,"geometry":{"type":"Point","coordinates":[-124.60425999999995,54.06132500000007]},"properties":{"caption":"Hwy 16, at Nautley Road, looking east.","Name":"Nautley Rd - E","info":"E"}},{"type":"Feature","id":658,"geometry":{"type":"Point","coordinates":[-124.60425999999995,54.06132500000007]},"properties":{"caption":"Hwy 16, at Nautley Road, looking north.","Name":"Nautley Rd - N","info":"N"}},{"type":"Feature","id":659,"geometry":{"type":"Point","coordinates":[-127.33164699999998,55.01878500000004]},"properties":{"caption":"Hwy 16, in Moricetown at Beaver Road, looking north","Name":"Moricetown - N","info":"N"}},{"type":"Feature","id":660,"geometry":{"type":"Point","coordinates":[-127.33164699999998,55.01878500000004]},"properties":{"caption":"Hwy 16, in Moricetown at Beaver Road, looking west.","Name":"Moricetown - W","info":"W"}},{"type":"Feature","id":662,"geometry":{"type":"Point","coordinates":[-127.33164699999998,55.01878500000004]},"properties":{"caption":"Hwy 16, in Moricetown at Beaver Road, looking south.","Name":"Moricetown - S","info":"S"}},{"type":"Feature","id":663,"geometry":{"type":"Point","coordinates":[-127.050592,54.69676000000004]},"properties":{"caption":"Hwy 16, in Telkwa at Hankin Rd, looking north.","Name":"Telkwa - N","info":"N"}},{"type":"Feature","id":665,"geometry":{"type":"Point","coordinates":[-127.050592,54.69676000000004]},"properties":{"caption":"Hwy 16, in Telkwa at Hankin Rd, looking east.","Name":"Telkwa - E","info":"E"}},{"type":"Feature","id":666,"geometry":{"type":"Point","coordinates":[-127.050592,54.69676000000004]},"properties":{"caption":"Hwy 16, in Telkwa at Hankin Rd, looking south","Name":"Telkwa - S","info":"S"}},{"type":"Feature","id":668,"geometry":{"type":"Point","coordinates":[-125.76027799999997,54.227441000000056]},"properties":{"caption":"Hwy 16, in Burns Lake, at N. Francois Hwy, looking west.","Name":"Burns Lake - W","info":"W"}},{"type":"Feature","id":669,"geometry":{"type":"Point","coordinates":[-125.76027799999997,54.227441000000056]},"properties":{"caption":"Hwy 16, in Burns Lake, at N. Francois Hwy, looking east.","Name":"Burns Lake - E","info":"E"}},{"type":"Feature","id":670,"geometry":{"type":"Point","coordinates":[-125.76027799999997,54.227441000000056]},"properties":{"caption":"Hwy 16, in Burns Lake, at N. Francois Hwy, looking south.","Name":"Burns Lake - S","info":"S"}},{"type":"Feature","id":671,"geometry":{"type":"Point","coordinates":[-124.11945499999996,54.01257600000008]},"properties":{"caption":"Hwy 16 at Hwy 27 junction, looking north.","Name":"Hwy 16 at Hwy 27 - N","info":"N"}},{"type":"Feature","id":672,"geometry":{"type":"Point","coordinates":[-124.11945499999996,54.01257600000008]},"properties":{"caption":"Hwy 16 at Hwy 27 Junction, looking west.","Name":"Hwy 16 at Hwy 27 - W","info":"W"}},{"type":"Feature","id":673,"geometry":{"type":"Point","coordinates":[-124.11945499999996,54.01257600000008]},"properties":{"caption":"Hwy 16 at Hwy 27 Junction, looking east.","Name":"Hwy 16 at Hwy 27 - E","info":"E"}},{"type":"Feature","id":678,"geometry":{"type":"Point","coordinates":[-128.07702569999998,55.095972000000074]},"properties":{"caption":"Junction of Hwy 16 and Hwy 37, near Kitwanga, looking north on Hwy 37.","Name":"Kitwanga - N","info":"N"}},{"type":"Feature","id":679,"geometry":{"type":"Point","coordinates":[-128.07702569999998,55.095972000000074]},"properties":{"caption":"Junction of Hwy 16 and Hwy 37, near Kitwanga, looking east on Hwy 16.","Name":"Kitwanga - E","info":"E"}},{"type":"Feature","id":683,"geometry":{"type":"Point","coordinates":[-124.91415669999998,54.06075100000004]},"properties":{"caption":"Hwy 16 at Stella Road in Fraser Lake, looking north.","Name":"Stella Rd - N","info":"N"}},{"type":"Feature","id":684,"geometry":{"type":"Point","coordinates":[-124.91415669999998,54.06075100000004]},"properties":{"caption":"Hwy 16 at Stella Road in Fraser Lake, looking west.","Name":"Stella Rd - W","info":"W"}},{"type":"Feature","id":685,"geometry":{"type":"Point","coordinates":[-124.91415669999998,54.06075100000004]},"properties":{"caption":"Hwy 16 at Stella Road in Fraser Lake, looking east.","Name":"Stella Rd - E","info":"E"}},{"type":"Feature","id":690,"geometry":{"type":"Point","coordinates":[-123.75050599999997,53.93624100000005]},"properties":{"caption":"Hwy 16 at Sob Lake Road in Vanderhoof, looking west.","Name":"Sob Lake - W","info":"W"}},{"type":"Feature","id":691,"geometry":{"type":"Point","coordinates":[-123.75050599999997,53.93624100000005]},"properties":{"caption":"Hwy 16 at Sob Lake Road in Vanderhoof, looking east.","Name":"Sob Lake - E","info":"E"}},{"type":"Feature","id":694,"geometry":{"type":"Point","coordinates":[-126.64318599999996,54.401163000000054]},"properties":{"caption":"Hwy 16 at Butler Avenue in Houston, looking west.","Name":"Butler - W","info":"W"}},{"type":"Feature","id":695,"geometry":{"type":"Point","coordinates":[-126.64318599999996,54.401163000000054]},"properties":{"caption":"Hwy 16 at Butler Avenue in Houston, looking east.","Name":"Butler - E","info":"E"}},{"type":"Feature","id":697,"geometry":{"type":"Point","coordinates":[-126.66839949999996,54.394359000000065]},"properties":{"caption":"Hwy 16 at North Nadina Avenue in Houston, looking north.","Name":"Nadina - N","info":"N"}},{"type":"Feature","id":698,"geometry":{"type":"Point","coordinates":[-126.66839949999996,54.394359000000065]},"properties":{"caption":"Hwy 16 at North Nadina Avenue in Houston, looking west.","Name":"Nadina - W","info":"W"}},{"type":"Feature","id":699,"geometry":{"type":"Point","coordinates":[-126.66839949999996,54.394359000000065]},"properties":{"caption":"Hwy 16 at North Nadina Avenue in Houston, looking east.","Name":"Nadina - E","info":"E"}},{"type":"Feature","id":708,"geometry":{"type":"Point","coordinates":[-125.16917309999997,54.09417560000003]},"properties":{"caption":"Hwy 16, 48 km east of Burns Lake, looking east.","Name":"Savory Rest Area - E","info":"NE"}},{"type":"Feature","id":744,"geometry":{"type":"Point","coordinates":[-120.51591399999995,53.44040600000005]},"properties":{"caption":"Hwy 16, at West Twin Creek, looking west.","Name":"West Twin - W","info":"W"}},{"type":"Feature","id":745,"geometry":{"type":"Point","coordinates":[-120.51591399999995,53.44040600000005]},"properties":{"caption":"Hwy 16, at West Twin Creek, looking east.","Name":"West Twin - E","info":"E"}},{"type":"Feature","id":816,"geometry":{"type":"Point","coordinates":[-124.47769999999997,54.05579000000006]},"properties":{"caption":"Hwy 16, about 5 km east of Fort Fraser, looking east.","Name":"Fort Fraser Hills","info":"E"}},{"type":"Feature","id":837,"geometry":{"type":"Point","coordinates":[-122.76809699999995,53.897331000000065]},"properties":{"caption":"Hwy 97 at Hwy 16 in Prince George, looking eastbound on Hwy 16.","Name":"Prince George eastbound","info":"N"}},{"type":"Feature","id":838,"geometry":{"type":"Point","coordinates":[-122.76809699999995,53.897331000000065]},"properties":{"caption":"Hwy 97 at Hwy 16 in Prince George, looking northbound on Hwy 97.","Name":"Prince George northbound","info":"W"}},{"type":"Feature","id":839,"geometry":{"type":"Point","coordinates":[-122.76809699999995,53.897331000000065]},"properties":{"caption":"Hwy 97 at Hwy 16 in Prince George, looking southbound on Hwy 97.","Name":"Prince George southbound","info":"E"}},{"type":"Feature","id":840,"geometry":{"type":"Point","coordinates":[-122.76809699999995,53.897331000000065]},"properties":{"caption":"Hwy 97 at Hwy 16 in Prince George, looking westbound on Hwy 16.","Name":"Prince George westbound","info":"S"}},{"type":"Feature","id":846,"geometry":{"type":"Point","coordinates":[-123.13221999999996,53.831390000000056]},"properties":{"caption":"Hwy 16 at Dahl Lake Rd, about 33 km west of Prince George, looking west.","Name":"Tamarack","info":"W"}},{"type":"Feature","id":895,"geometry":{"type":"Point","coordinates":[-123.40412799999996,53.87730400000004]},"properties":{"caption":"Hwy 16 at Bednesti between Prince George and Vanderhoof, looking east.","Name":"Bednesti - E","info":"E"}}
+        ]
+      };         
+      // Rest Area
+      var RestS ={
+        "type":"FeatureCollection",
+        "features":[
+          {"type":"Feature","id":1,"geometry":{"type":"Point","coordinates":[-126.99688042429095,54.668286938178895]},"properties":{"Name":"BULKLEY VIEW","info":"4.5 KM EAST OF TELKWA"}},{"type":"Feature","id":2,"geometry":{"type":"Point","coordinates":[-128.2031937908559,55.071582300246774]},"properties":{"Name":"BOULDER CREEK","info":"52.8KM WEST OF HAZELTON"}},{"type":"Feature","id":3,"geometry":{"type":"Point","coordinates":[-119.91389531946137,53.18172612841741]},"properties":{"Name":"BAKER CREEK","info":"22.3KM SOUTH OF MCBRIDE"}},{"type":"Feature","id":4,"geometry":{"type":"Point","coordinates":[-119.31066607252288,52.88550759967231]},"properties":{"Name":"MT TERRY FOX 5","info":"5.0KM NORTH OF VALEMOUNT"}},{"type":"Feature","id":5,"geometry":{"type":"Point","coordinates":[-119.41581744227373,52.97647059142446]},"properties":{"Name":"TETE JAUNE CACHE","info":"1.0KM EAST OF TETE JAUNE JUNCTION"}},{"type":"Feature","id":6,"geometry":{"type":"Point","coordinates":[-119.31980139816419,52.98061987275906]},"properties":{"Name":"MT TERRY FOX 16","info":"6.5KM EAST OF TETE JAUNE JUNCTION"}},{"type":"Feature","id":7,"geometry":{"type":"Point","coordinates":[-124.68388250896224,54.06081125448244]},"properties":{"Name":"DRY WILLIAM LAKE","info":"47.5KM WEST OF VANDERHOOF"}},{"type":"Feature","id":8,"geometry":{"type":"Point","coordinates":[-125.16797743577354,54.09399118040211]},"properties":{"Name":"SAVORY","info":"82.1KM WEST OF VANDERHOOF"}},{"type":"Feature","id":9,"geometry":{"type":"Point","coordinates":[-123.58688763533732,53.90921144299537]},"properties":{"Name":"CLUCULZ LAKE","info":"34.1KM EAST OF VANDERHOOF"}},{"type":"Feature","id":10,"geometry":{"type":"Point","coordinates":[-125.6052035313892,54.20522585740291]},"properties":{"Name":"TINTAGEL","info":"15.0KM EAST OF BURNS LAKE"}},{"type":"Feature","id":11,"geometry":{"type":"Point","coordinates":[-126.77580463542343,54.53520589742955]},"properties":{"Name":"HUNGRY HILL","info":"21.0KM WEST OF HOUSTON"}},{"type":"Feature","id":12,"geometry":{"type":"Point","coordinates":[-125.91980983063131,54.35641876628024]},"properties":{"Name":"PALLING","info":"19.0KM WEST OF BURNS LAKE"}},{"type":"Feature","id":13,"geometry":{"type":"Point","coordinates":[-126.31401094093378,54.510463242077634]},"properties":{"Name":"TOPLEY","info":"2.0KM WEST OF TOPLEY"}},{"type":"Feature","id":14,"geometry":{"type":"Point","coordinates":[-128.31106584476686,54.714723728735024]},"properties":{"Name":"SANDERSON POINT","info":"30.0KM EAST OF TERRACE"}},{"type":"Feature","id":15,"geometry":{"type":"Point","coordinates":[-129.03271001676325,54.402924208889466]},"properties":{"Name":"EXSTEW","info":"44.0KM WEST OF TERRACE"}},{"type":"Feature","id":16,"geometry":{"type":"Point","coordinates":[-125.40911481107551,54.15045241188783]},"properties":{"Name":"SHERATON","info":"29.0KM EAST OF BURNS LAKE"}},{"type":"Feature","id":17,"geometry":{"type":"Point","coordinates":[-126.19448593795329,54.45212995270707]},"properties":{"Name":"6 MILE BRAKE CHECK","info":"8.0KM EAST OF TOPLEY"}},{"type":"Feature","id":18,"geometry":{"type":"Point","coordinates":[-124.1194820097651,54.01377307747798]},"properties":{"Name":"VANDERHOOF SCALE","info":"7KM WEST OF VANDERHOOF"}},{"type":"Feature","id":19,"geometry":{"type":"Point","coordinates":[-122.00178576048211,53.89931612377399]},"properties":{"Name":"BOWRON NORTH REST AREA","info":"49.5KM EAST OF PRINCE GEORGE"}},{"type":"Feature","id":20,"geometry":{"type":"Point","coordinates":[-122.00178576048211,53.89931612377399]},"properties":{"Name":"BOWRON SOUTH REST AREA","info":"49.5KM EAST OF PRINCE GEORGE"}},{"type":"Feature","id":21,"geometry":{"type":"Point","coordinates":[-122.28674774604146,53.88699790182563]},"properties":{"Name":"WILLOW RIVER","info":"29.7KM EAST OF PRINCE GEORGE"}},{"type":"Feature","id":22,"geometry":{"type":"Point","coordinates":[-120.60681302424699,53.49395437311881]},"properties":{"Name":"GOAT RIVER","info":"39.7KM NORTHWEST OF MCBRIDE"}},{"type":"Feature","id":23,"geometry":{"type":"Point","coordinates":[-119.61570286606694,53.05910709435093]},"properties":{"Name":"SMALL RIVER","info":"47.0KM EAST OF MCBRIDE"}},{"type":"Feature","id":24,"geometry":{"type":"Point","coordinates":[-125.17142556717313,54.09397235287075]},"properties":{"Name":"SAVORY WEST","info":82.2}}
+  ]
+      };
+
+    // Wait until the map has finished loading.
+    map.on('load', function () {
+         
+      // Add all sources 
+      map.addSource('Highway-16', {
+            type: 'vector',
+            url: 'mapbox://fel-y.1qd9a6qg'
+          });
+      // map.addSource('Bus Stop', {
+      //       type: 'vector',
+      //       url: 'mapbox://fel-y.3lld9fky'
+      //   });
+      // map.addSource('First Responder', {
+      //       type: 'vector',
+      //       url: 'mapbox://fel-y.96ttcytw'
+      //   });
+      // map.addSource('Highway Camera', {
+      //       type: 'vector',
+      //       url: 'mapbox://fel-y.1395qfhf'
+      //   });
+      // map.addSource('Rest Stop', {
+      //       type: 'vector',
+      //       url: 'mapbox://fel-y.6bex9nca'
+      //   });
+      
+      // Add all layers
+        //highway-16 line
+        map.addLayer({
+        'id': 'Highway-16',
+        'type': 'line',
+        'source': 'Highway-16',
+        'layout':  { 
+          'visibility': 'visible',
+          'line-join': 'round',
+          'line-cap': 'round'
+        },
+        'paint': {
+          'line-width': 4
+        },
+        'source-layer': 'Route-16-7ynl9h',
+      });
+      
+        // bus stop
+        map.addLayer({
+            'id': 'Bus Stop',
+            'type': 'symbol',
+            source: {
+              type: 'geojson',
+              data: BusStop
+          },
+            'layout': {
+              'visibility': 'visible',
+              'icon-image': 'bus',
+              'icon-size':1.5,
+              'icon-allow-overlap':true
+            },
+            'paint': {
+            },
+        });
+        
+        //Highway Camera
+        map.addLayer({
+            'id': 'Highway Camera',
+            'type': 'symbol',
+            'source': {
+              type: 'geojson',
+              data: HighCam
+            },
+            'layout': {
+              'visibility': 'visible',
+              'icon-image':'attraction-15',
+              'icon-size': 1.5,
+              'icon-allow-overlap':true
+            },
+        }); 
+      
+        //Rest Stop
+        map.addLayer({
+            'id': 'Rest Stop',
+            'type': 'symbol',
+            'source': {
+              type: 'geojson',
+              data: RestS
+          },
+            'layout': {
+              'visibility': 'visible',
+              'icon-image':'lodging-15',
+              'icon-size': 1.5,
+              'icon-allow-overlap':true
+            },
+            'paint': {
+              'icon-color': 'red'
+            },
+        });
+      
+        //First Responder
+        map.addLayer({
+            'id': 'First Responder',
+            'type': 'symbol',
+            'source': {
+              type: 'geojson',
+              data: FirstRes
+          },
+            'layout': {
+              'visibility': 'visible',
+              'icon-image': 'hospital-15',
+              'icon-size':1.5,
+              'icon-allow-overlap':true
+            },
+            'paint': {
+            },
+        }); 
+      
+        // townships
+        map.addLayer({
+            'id': 'Towns',
+            'type': 'symbol',
+            'source': 'Highway-16',
+            'source-layer': 'Route-16-7ynl9h',
+            'layout': {
+              'visibility': 'visible',
+              'icon-image': 'town-hall-15',
+              'icon-size':1.5,
+              'icon-offset':[0,15],
+              'text-field': ['get', 'name'],
+              'text-variable-anchor': ['top', 'bottom', 'left', 'right'],
+              'text-radial-offset': 2,
+              'text-justify': 'auto',
+              'text-font': [
+                'Open Sans Semibold',
+                'Arial Unicode MS Bold'],
+              'icon-allow-overlap':true,
+              'text-allow-overlap':true
+            }
+          });
+    });
+
+    // Toggle Buttons
+    map.on('idle', function () {
+        // If these two layers have been added to the style,
+        // add the toggle buttons.
+      
+        if (map.getLayer('Towns') && map.getLayer('Bus Stop') && map.getLayer('First Responder') && map.getLayer('Rest Stop') && map.getLayer('Highway Camera')) {
+            // Enumerate ids of the layers.
+            var toggleableLayerIds = ['Towns', 'Bus Stop', 'First Responder', 'Rest Stop', 'Highway Camera'];
+            // Set up the corresponding toggle button for each layer.
+            for (var i = 0; i < toggleableLayerIds.length; i++) {
+                var id = toggleableLayerIds[i];
+                if (!document.getElementById(id)) {
+                    // Create a link.
+                    var link = document.createElement('a');
+                    link.id = id;
+                    link.href = '#';
+                    link.textContent = id;
+                    link.className = 'active';
+                    // Show or hide layer when the toggle is clicked.
+                    link.onclick = function (e) {
+                        var clickedLayer = this.textContent;
+                        e.preventDefault();
+                        e.stopPropagation();
+
+                        var visibility = map.getLayoutProperty(
+                            clickedLayer,
+                            'visibility'
+                        );
+
+                        // Toggle layer visibility by changing the layout object's visibility property.
+                        if (visibility === 'visible') {
+                            map.setLayoutProperty(
+                                clickedLayer,
+                                'visibility',
+                                'none'
+                            );
+                            this.className = '';
+                        } else {
+                            this.className = 'active';
+                            map.setLayoutProperty(
+                                clickedLayer,
+                                'visibility',
+                                'visible'
+                            );
+                        }
+                    };
+
+                    var layers = document.getElementById('menu');
+                    layers.appendChild(link);
+                }
+}
+}
+});
+    
+  // All Pop-Up
+   var popup = new mapboxgl.Popup();
+      map.on('mousemove', function (e) {
+        var features = map.queryRenderedFeatures(e.point, {
+          layers: ['Bus Stop','Highway Camera','Rest Stop','First Responder']
+        });
+        if (!features.length) {
+          popup.remove();
+          return;
+        }
+
+        var feature = features[0];
+
+        popup
+          .setLngLat(feature.geometry.coordinates)
+          .setHTML(feature.properties.Name + ' (' +
+               feature.properties.info + ')'
+                  )
+          .addTo(map);
+
+        map.getCanvas().style.cursor = features.length ? 'pointer' : '';
+      });
+  
+  </script>
+ 
+</body>
+</html>
