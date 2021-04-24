@@ -1,17 +1,19 @@
-# ‘NO MORE STOLEN SISTERS’ - THE HIGHWAY OF TEARS
-## Our comprehensive spatial manifesto honoring and remembering Missing and Murdered Indigenous Women in Northern BC, Canada.
-### Sara Ng, Felicia Yue, Mark Leung, Eduardo Fuks
+## ‘NO MORE STOLEN SISTERS’ - THE HIGHWAY OF TEARS
+Our comprehensive spatial manifesto honoring and remembering Missing and Murdered Indigenous Women in Northern BC, Canada.
+Group Members: Sara Ng, Felicia Yue, Mark Leung, Eduardo Fuks
 
 Project Essay: https://feliciay2.wixsite.com/geob472mmiwg
 
 ## HIGHWAY-16 FEATURES AND AMENTITIES 
-### [Full Map](Final/HTML Maps/Final-pt1.html)
+https://ubc-geob472-spring2021.github.io/Room-4-Final/Final/HTML%20Maps/Final-pt1.html
+
 ![Interactive Map pt1](472FinalPt1-FY.png)
 
 
 ## HIGHWAY-16 Spatial Relation between Features 
-### [Full Map](Final/HTML Maps/Final-pt2.html)
-![Interactive Map pt2](472FinalPt1-FY.png)
+https://ubc-geob472-spring2021.github.io/Room-4-Final/Final/HTML%20Maps/Final-pt2.html
+
+![Interactive Map pt2](472FinalPt2-FY.png)
 
 
 
